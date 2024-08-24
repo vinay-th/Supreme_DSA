@@ -1,13 +1,16 @@
 #include <iostream>
 using namespace std;
 void printPairs(int arr[], int n) {
+  int count = 0;
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < n; j++) {
       for (int k = 0; k < n; k++) {
         cout << "(" << arr[i] << ", " << arr[j] << ", " << arr[k] << ")\n";
+        count++;
       }
     }
   }
+  cout << "total: " << count;
 }
 int main() {
   int arr[] = {1, 2, 3, 4, 5};
