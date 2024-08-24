@@ -22,9 +22,7 @@ void digitToNum() {
 }
 int main() {
   int n;
-
   digitToNum();
-
   cout << "\nThe number is : " << num;
 
   cout << "\n";
