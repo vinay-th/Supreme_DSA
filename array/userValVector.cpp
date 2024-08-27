@@ -22,6 +22,8 @@ int main() {
   }
   print(arr);
 
+  // to clear the vector and memory alloted
+  arr.clear();
   cout << "\n";
   return 0;
 }
