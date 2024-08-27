@@ -4,7 +4,8 @@ using namespace std;
 void print(vector<int> v) {
   int size = v.size();
   for (int i = 0; i < size; i++) {
-    cout << v[i] << endl;
+    // cout << v[i] << endl;
+    cout << v.at(i) << endl;
   }
 }
 int main() {
@@ -14,10 +15,10 @@ int main() {
   cout << "Enter the size of array: ";
   cin >> n;
 
-  for (int i = 0; i < n; i++){
-      cout<< "Enter the value for arr[" << i << "]: ";
-      cin >> temp;
-      arr.push_back(temp);
+  for (int i = 0; i < n; i++) {
+    cout << "Enter the value for arr[" << i << "]: ";
+    cin >> temp;
+    arr.push_back(temp);
   }
   print(arr);
 
